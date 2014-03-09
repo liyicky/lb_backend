@@ -3,6 +3,9 @@ require 'test_helper'
 class ClumpsControllerTest < ActionController::TestCase
   setup do
     @clump = clumps(:one)
+    @update = {
+      url:    "http://www.google.com",
+      shit:   false }
   end
 
   test "should get index" do
@@ -18,7 +21,7 @@ class ClumpsControllerTest < ActionController::TestCase
 
   test "should create clump" do
     assert_difference('Clump.count') do
-      post :create, clump: { shit: @clump.shit, url: @clump.url }
+      post :create, clump: @update
     end
 
     assert_redirected_to clump_path(assigns(:clump))
@@ -35,7 +38,7 @@ class ClumpsControllerTest < ActionController::TestCase
   end
 
   test "should update clump" do
-    patch :update, id: @clump, clump: { shit: @clump.shit, url: @clump.url }
+    patch :update, id: @clump, clump: @update
     assert_redirected_to clump_path(assigns(:clump))
   end
 
