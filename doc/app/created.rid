@@ -1,0 +1,7 @@
+Sun, 09 Mar 2014 10:38:32 -0400
+README.rdoc	Sun, 09 Mar 2014 10:35:03 -0400
+app/controllers/application_controller.rb	Sun, 09 Mar 2014 10:35:03 -0400
+app/controllers/clumps_controller.rb	Sun, 09 Mar 2014 10:35:03 -0400
+app/helpers/application_helper.rb	Sun, 09 Mar 2014 10:35:03 -0400
+app/helpers/clumps_helper.rb	Sun, 09 Mar 2014 10:35:03 -0400
+app/models/clump.rb	Sun, 09 Mar 2014 10:35:03 -0400
