@@ -10,16 +10,18 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
-  </div>
-  <div class="field">
-    <%= f.label :shit %><br>
-    <%= f.check_box :shit %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <form role="form">
+    <div class="form-group">
+      <%= f.label :url %><br>
+      <%= f.text_field :url, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :shit %><br>
+      <%= f.check_box :shit, class: "checkbox" %>
+    </div>
+    <div class="">
+      <%= f.submit %>
+    </div>
+</form>
 <% end %>
+
