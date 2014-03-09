@@ -1,0 +1,29 @@
+<h1>Listing clumps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Shit</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clumps.each do |clump| %>
+      <tr>
+        <td><%= clump.url %></td>
+        <td><%= clump.shit %></td>
+        <td><%= link_to 'Show', clump %></td>
+        <td><%= link_to 'Edit', edit_clump_path(clump) %></td>
+        <td><%= link_to 'Destroy', clump, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Clump', new_clump_path %>

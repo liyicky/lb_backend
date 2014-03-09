@@ -1,4 +1,6 @@
 LbBackend::Application.routes.draw do
+  resources :clumps
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

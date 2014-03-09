@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+ruby '2.1.1'
+gem 'bootstrap-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -30,6 +31,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  gem 'rails_layout'
 end
 
 # Use ActiveModel has_secure_password
