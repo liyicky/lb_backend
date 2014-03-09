@@ -14,7 +14,7 @@
   <tbody>
     <% @clumps.each do |clump| %>
       <tr>
-        <td><%= clump.url %></td>
+        <td><%= link_to clump.url, clump.url %></td>
         <td><%= clump.shit %></td>
         <td><%= link_to 'Show', clump, class: "btn btn-primary btn-xs" %></td>
         <td><%= link_to 'Edit', edit_clump_path(clump), class: "btn btn-primary btn-xs" %></td>

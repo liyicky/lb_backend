@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Clump.create( url: "google.com", shit: false )
-Clump.create( url: "4chan.org",  shit: true  )
-Clump.create( url: "hottits.com",shit: true  )
-Clump.create( url: "pandora.com",shit: false )
-Clump.create( url: "stuff.com",  shit: true  )
+Clump.create( url: "http://www.google.com", shit: false )
+Clump.create( url: "http://www.4chan.org",  shit: true  )
+Clump.create( url: "http://www.hottits.com",shit: true  )
+Clump.create( url: "http://www.pandora.com",shit: false )
+Clump.create( url: "http://www.stuff.com",  shit: true  )
