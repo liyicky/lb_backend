@@ -38,7 +38,7 @@ class ClumpsControllerTest < ActionController::TestCase
   end
 
   test "should update clump" do
-    patch :update, id: @clump, clump: @update
+    patch :update, id: @clump, clump: @update 
     assert_redirected_to clump_path(assigns(:clump))
   end
 
